@@ -108,6 +108,9 @@ function draw() {
   textAlign(CENTER)
   text("SLEEP PHASES",width/2,height/20)
   text(s,width/2,height-80)
+  textAlign(LEFT);
+  textSize(height/100);
+  text("original music credited to Haunted Me",width/20,height-5);
 
 
   mm.setPosition(mouseX, mouseY);
@@ -446,6 +449,7 @@ function windowResized() {
   
   progress = progress + 0.0006*windowWidth;
   push()
+  textSize(height/40);
   text(`0hrs`, 30, height -22)
   text(`8hrs`, width - 30, height -22)
   stroke(200,200)
